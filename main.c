@@ -1,6 +1,7 @@
+#include <lpc2103.h>
 #include <stdio.h>
 #include <stdlib.h>
-
+#include <mutex.h>
 #define N_FILOSOFOS 5
 #define COMENDO 0
 #define PENSANDO 1 
