@@ -12,13 +12,13 @@ typedef struct filosofo{
 }filosofo;
 
 /* A estrutura de garfo é semelhante a de filósofo, mas possui no lugar de um index um inteiro
-que destingue se este garfo está sendo utilizado ou não. */  
+que destingue se este garfo está sendo utilizado ou não. */
 typedef struct garfo{
 	filosofo *fil_esq;
 	filosofo *fil_dir;
 
 	//Garfo está sendo usado? 1 == True / 0 == False
-	int usando; 
+	int usando;
 }garfo;
 
 
@@ -31,7 +31,7 @@ typedef struct mesa{
 //inicializa o grafo ciclico representando uma mesa e retorna a estrutura inicializada(alocada)
 mesa * InicializarMesa();
 
-/* A estrutura de dados utilizada é um grafo ciclico (pode ser visto como uma lista duplamente encadeada ciclica) 
+/* A estrutura de dados utilizada é um grafo ciclico (pode ser visto como uma lista duplamente encadeada ciclica)
 de modo que existem dois tipos de nós, garfos e filosofos. Cada filósofo está conectado a dois garfos e, portanto,
 dois garfos a dois filosofos. As estruturas podem ser vistas no header do código. */
 void * OcuparMesa(mesa *vazia);
@@ -45,5 +45,11 @@ filosofo * BuscarFilosofo(mesa *mesa_cheia, int index_filosofo);
 
 //Filosofo indica intenção de comer e levanta os garfos se disponiveis.
 void Comer(filosofo *fil);
+
+//Filosofo começa pensando, sem entrar na região critica
+void Pensar(filosofo *fil);
+
+//Escopo em qual o filosofo se encontrará, desde pensar a comer
+void rodar_filosofo(filosofo *filosofo_atual);
 
 
