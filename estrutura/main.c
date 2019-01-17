@@ -1,10 +1,10 @@
 #include <stdio.h>
-#include "filosofo.c"
+#include "filosofo.h"
 
 
 
 int main(){
-
+    printf("Inicio");
     mesa *nova_mesa = InicializarMesa();
     OcuparMesa(nova_mesa);
     filosofo *filosofo_1 = BuscarFilosofo(nova_mesa,1);

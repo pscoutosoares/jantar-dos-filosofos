@@ -70,6 +70,7 @@ filosofo * BuscarFilosofo(mesa *mesa_cheia, int index_filosofo){
 }
 //Filosofo deseja comer, verifica se os garfos estão disponíveis
 void Comer(filosofo *fil){
+    printf("Filosofo %d está comendo", fil->index);
     int x = 0;
 
     while(x != 1){
@@ -92,8 +93,10 @@ void Comer(filosofo *fil){
     //região critica
     int randomTime = rand() %5 + 1;
     sleep(randomTime);
+    printf("Filosofo %d comeu", fil->index);
 }
 void Pensar(filosofo *fil){
+    printf("Filosofo %d está pensando", fil->index);
     int randomTime = rand() %5 + 1;
     sleep(randomTime);
 }
