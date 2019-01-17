@@ -1,0 +1,11 @@
+Dependencies for Project 'jantar', Target 'Target 1': (DO NOT MODIFY !)
+F (.\Startup.s)(0x5C409D04)(--cpu ARM7TDMI --pd "__EVAL SETA 1" -g --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips--list .\startup.lst --xref -o .\startup.o --depend .\startup.d)
+F (.\lpc2103.h)(0x5C3FFBCB)()
+F (.\filosofo.c)(0x5C40A002)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-o .\filosofo.o --omf_browse .\filosofo.crf --depend .\filosofo.d)
+I (filosofo.h)(0x5C40A126)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C86004)
+I (C:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C86004)
+F (.\main.c)(0x5C40A072)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-o .\main.o --omf_browse .\main.crf --depend .\main.d)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C86004)
+I (filosofo.h)(0x5C40A126)
+I (C:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C86004)

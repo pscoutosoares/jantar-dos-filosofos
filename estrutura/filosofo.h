@@ -1,3 +1,4 @@
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -29,12 +30,12 @@ typedef struct mesa{
 
 
 //inicializa o grafo ciclico representando uma mesa e retorna a estrutura inicializada(alocada)
-mesa * InicializarMesa();
+mesa * InicializarMesa(void);
 
 /* A estrutura de dados utilizada é um grafo ciclico (pode ser visto como uma lista duplamente encadeada ciclica)
 de modo que existem dois tipos de nós, garfos e filosofos. Cada filósofo está conectado a dois garfos e, portanto,
 dois garfos a dois filosofos. As estruturas podem ser vistas no header do código. */
-void * OcuparMesa(mesa *vazia);
+void OcuparMesa(mesa *vazia);
 
 //cria nós, filosofos e garfos.
 filosofo * CriarFilosofo(garfo *esq, garfo *dir, int index);
